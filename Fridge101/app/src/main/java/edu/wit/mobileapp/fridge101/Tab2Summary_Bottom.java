@@ -21,6 +21,4 @@ public class Tab2Summary_Bottom extends Fragment {
         View rootView = inflater.inflate(R.layout.tab2summary_bottom, container, false);
         return rootView;
     }
-
-    //Commentsddsadsa
 }
