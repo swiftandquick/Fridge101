@@ -22,5 +22,5 @@ public class Tab2Summary_Bottom extends Fragment {
         return rootView;
     }
 
-    //Comment
+    //Commentsddsadsa
 }
