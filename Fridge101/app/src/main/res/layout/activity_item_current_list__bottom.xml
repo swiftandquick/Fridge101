@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ItemCurrentList_Bottom">
+
+    <TextView
+        android:id="@+id/txt_Message1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Current List (Bottom)"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:id="@+id/sv_item_list"
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:layout_below="@id/txt_Message1"
+        android:layout_centerHorizontal="true" >
+
+        <GridLayout
+            android:id="@+id/gl_item_list"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:columnCount="2" >
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current List"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:id="@+id/tv_expiration_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiration Date (YYYY-MM-DD)"
+                android:layout_gravity="right" />
+
+            <GridLayout
+                android:id="@+id/gl_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="left" >
+
+                <CheckBox android:id="@+id/cb_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gl_expirationdate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:layout_gravity="right" >
+
+                <EditText
+                    android:id="@+id/et_year1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_month1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/et_edit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit" />
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/gl_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="left" >
+
+                <CheckBox android:id="@+id/cb_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gl_expirationdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:layout_gravity="right" >
+
+                <EditText
+                    android:id="@+id/et_year2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_month2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/et_edit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit" />
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/gl_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="left" >
+
+                <CheckBox android:id="@+id/cb_item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gl_expirationdate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:layout_gravity="right" >
+
+                <EditText
+                    android:id="@+id/et_year3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_month3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/et_edit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit" />
+
+            </GridLayout>
+
+
+            <GridLayout
+                android:id="@+id/gl_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="left" >
+
+                <CheckBox android:id="@+id/cb_item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gl_expirationdate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:layout_gravity="right" >
+
+                <EditText
+                    android:id="@+id/et_year4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash4a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_month4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_day4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/et_edit4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gl_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_gravity="left" >
+
+                <CheckBox android:id="@+id/cb_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gl_expirationdate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="6"
+                android:layout_gravity="right" >
+
+                <EditText
+                    android:id="@+id/et_year5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_month5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/tv_slash5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/et_day5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/et_edit5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit" />
+
+            </GridLayout>
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To delete items, check the items, then click on the Delete button.  "
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/gl_buttons" />
+
+    <GridLayout
+        android:id="@+id/gl_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="left" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:layout_gravity="left" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="right" />
+
+    </GridLayout>
+
+</RelativeLayout>

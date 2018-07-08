@@ -10,7 +10,6 @@
         android:id="@+id/refridgerator_freezer_compartment"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/refrigerator_freezer_compartment"
@@ -18,13 +17,6 @@
         android:focusable="true"
         android:scaleType="centerCrop"
         android:visibility="visible" />
-=======
-        android:text="Hello World!  It's me!!  "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
->>>>>>> refs/remotes/origin/yong
 
     <ImageView
         android:id="@+id/refridgerator_bottom_compartment"

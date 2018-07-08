@@ -27,6 +27,12 @@
             android:name=".Refridgerator_Bottom"
             android:label="@string/title_activity_refridgerator__bottom"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ItemCurrentList_Bottom" />
+        <activity android:name=".ItemCurrentList_Freezer" />
+        <activity android:name=".AddItem_Bottom" />
+        <activity android:name=".AddItem_Freezer" />
+        <activity android:name=".EditItem_Bottom" />
+        <activity android:name=".EditItem_Freezer"></activity>
     </application>
 
 </manifest>

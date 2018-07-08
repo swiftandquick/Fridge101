@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-<<<<<<< HEAD
         ImageView refridgerator_freezer_compartment = (ImageView) findViewById(R.id.refridgerator_freezer_compartment);
         refridgerator_freezer_compartment.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,8 +32,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(refridgerator_bottom_compartment_open);
             }
         });
-=======
-        // comment
->>>>>>> refs/remotes/origin/yong
     }
 }
