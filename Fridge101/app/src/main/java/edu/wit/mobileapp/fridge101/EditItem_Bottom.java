@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 public class EditItem_Bottom extends AppCompatActivity {
 
@@ -29,6 +31,15 @@ public class EditItem_Bottom extends AppCompatActivity {
                 startActivity(done);
             }
         });
+
+        String[] arraySpinner = new String[] {
+                "All Items", "Vegetable", "Fruit", "Grain", "Meat",
+                "Drink", "Other Food", "Non-Food" };
+        Spinner s = (Spinner) findViewById(R.id.s_category);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, arraySpinner);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        s.setAdapter(adapter);
 
     }
 }

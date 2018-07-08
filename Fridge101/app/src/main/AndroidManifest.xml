@@ -34,8 +34,8 @@
         <activity android:name=".EditItem_Bottom" />
         <activity android:name=".EditItem_Freezer" />
         <activity android:name=".Tab2Summary_Bottom_Fragment" />
-        <activity android:name=".Tab3Setting_Bottom" />
-        <activity android:name=".Tab3Setting_Freezer"></activity>
+        <activity android:name=".Tab4Setting_Bottom" />
+        <activity android:name=".Tab4Setting_Freezer"></activity>
     </application>
 
 </manifest>

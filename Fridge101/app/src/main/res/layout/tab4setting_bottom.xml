@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tab3Setting_Freezer">
+    tools:context=".Tab4Setting_Bottom">
 
     <Button
         android:id="@+id/b_to_main_page"
@@ -18,13 +18,13 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/b_to_bottom"
+        android:id="@+id/b_to_freezer"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/b_to_main_page"
         android:layout_marginTop="25dp"
-        android:text="Go to Bottom"
+        android:text="Go to Freezer"
         android:textSize="30sp" />
 
 </RelativeLayout>

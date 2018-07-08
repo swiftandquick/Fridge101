@@ -388,7 +388,7 @@ tools:context=".ItemCurrentList_Bottom">
         android:id="@+id/tv_instruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To delete items, check the items, then click on the Delete button.  "
+        android:text="To delete items, check the items, then click on the Remove button.  "
         android:layout_centerHorizontal="true"
         android:layout_above="@id/gl_buttons" />
 
