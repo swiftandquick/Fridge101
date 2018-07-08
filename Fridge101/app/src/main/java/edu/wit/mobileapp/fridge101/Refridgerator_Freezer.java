@@ -35,7 +35,7 @@ public class Refridgerator_Freezer extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new Tab1Home_Freezer(), "Home");
         adapter.addFragment(new Tab2Summary_Freezer(), "Summary");
-        adapter.addFragment(new Tab3ShoppingList_Freezer(), "Shopping List");
+        adapter.addFragment(new Tab3Setting_Freezer(), "Navigation");
         viewPager.setAdapter(adapter);
     }
 }

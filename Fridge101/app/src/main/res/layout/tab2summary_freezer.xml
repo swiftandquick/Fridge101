@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="20sp"
-        android:text="What items are in the freezer?  "  />
+        android:text="What items do you want to shop?  "  />
 
     <LinearLayout
         android:id="@+id/ll_category"

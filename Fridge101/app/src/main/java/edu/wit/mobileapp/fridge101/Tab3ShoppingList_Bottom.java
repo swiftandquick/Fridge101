@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+// Keeping this page, not sure if it's needed.
+
 public class Tab3ShoppingList_Bottom extends Fragment {
 
     @Override

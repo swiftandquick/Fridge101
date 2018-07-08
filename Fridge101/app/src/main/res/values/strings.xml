@@ -15,9 +15,9 @@
         <item>Fruit</item>
         <item>Grain</item>
         <item>Meat</item>
-        <item>Cooked Food</item>
         <item>Drink</item>
-        <item>Soda</item>
+        <item>Other Food</item>
+        <item>Non-Food</item>
     </string-array>
 
 </resources>

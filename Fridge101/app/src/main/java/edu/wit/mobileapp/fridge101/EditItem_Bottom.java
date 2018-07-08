@@ -12,7 +12,6 @@ public class EditItem_Bottom extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_item__bottom);
-
         Button remove = (Button) findViewById(R.id.b_remove);
         remove.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,7 +21,7 @@ public class EditItem_Bottom extends AppCompatActivity {
             }
         });
 
-        Button done = (Button) findViewById(R.id.b_add);
+        Button done = (Button) findViewById(R.id.b_done);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,5 +29,6 @@ public class EditItem_Bottom extends AppCompatActivity {
                 startActivity(done);
             }
         });
+
     }
 }

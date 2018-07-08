@@ -11,7 +11,7 @@ public class EditItem_Freezer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_item__freezer);
+        setContentView(R.layout.activity_refridgerator__freezer);
 
         Button remove = (Button) findViewById(R.id.b_remove);
         remove.setOnClickListener(new View.OnClickListener() {
@@ -22,7 +22,7 @@ public class EditItem_Freezer extends AppCompatActivity {
             }
         });
 
-        Button done = (Button) findViewById(R.id.b_add);
+        Button done = (Button) findViewById(R.id.b_done);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

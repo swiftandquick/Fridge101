@@ -36,7 +36,7 @@ public class Refridgerator_Bottom extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new Tab1Home_Bottom(), "Home");
         adapter.addFragment(new Tab2Summary_Bottom(), "Summary");
-        adapter.addFragment(new Tab3ShoppingList_Bottom(), "Shopping List");
+        adapter.addFragment(new Tab3Setting_Bottom(), "Navigation");
         viewPager.setAdapter(adapter);
     }
 }
