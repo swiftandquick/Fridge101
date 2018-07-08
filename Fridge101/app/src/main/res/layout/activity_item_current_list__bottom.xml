@@ -314,18 +314,18 @@ tools:context=".ItemCurrentList_Bottom">
             </GridLayout>
 
             <GridLayout
-                android:id="@+id/gl_item1"
+                android:id="@+id/gl_item5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="2"
                 android:layout_gravity="left" >
 
-                <CheckBox android:id="@+id/cb_item1"
+                <CheckBox android:id="@+id/cb_item5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
                 <EditText
-                    android:id="@+id/et_item1"
+                    android:id="@+id/et_item5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="text"/>
