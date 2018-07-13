@@ -23,7 +23,7 @@ public class Tab1Home_Bottom extends Fragment {
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ItemCurrentList_Bottom.class);
+                Intent intent = new Intent(getActivity(), ItemCurrentList.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class Tab1Home_Bottom extends Fragment {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), AddItem_Bottom.class);
+                Intent intent = new Intent(getActivity(), AddItem.class);
                 startActivity(intent);
             }
         });

@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ItemCurrentList_Freezer extends AppCompatActivity {
+public class ItemCurrentList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_current_list__freezer);
+        setContentView(R.layout.activity_item_current_list);
 
         Button edit1 = (Button) findViewById(R.id.et_edit1);
         edit1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit1 = new Intent(ItemCurrentList_Freezer.this, EditItem_Bottom.class);
+                Intent edit1 = new Intent(ItemCurrentList.this, EditItem.class);
                 startActivity(edit1);
             }
         });
@@ -26,7 +26,7 @@ public class ItemCurrentList_Freezer extends AppCompatActivity {
         edit2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit2 = new Intent(ItemCurrentList_Freezer.this, EditItem_Bottom.class);
+                Intent edit2 = new Intent(ItemCurrentList.this, EditItem.class);
                 startActivity(edit2);
             }
         });
@@ -35,7 +35,7 @@ public class ItemCurrentList_Freezer extends AppCompatActivity {
         edit3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit3 = new Intent(ItemCurrentList_Freezer.this, EditItem_Bottom.class);
+                Intent edit3 = new Intent(ItemCurrentList.this, EditItem.class);
                 startActivity(edit3);
             }
         });
@@ -44,7 +44,7 @@ public class ItemCurrentList_Freezer extends AppCompatActivity {
         edit4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit4 = new Intent(ItemCurrentList_Freezer.this, EditItem_Bottom.class);
+                Intent edit4 = new Intent(ItemCurrentList.this, EditItem.class);
                 startActivity(edit4);
             }
         });
@@ -53,7 +53,7 @@ public class ItemCurrentList_Freezer extends AppCompatActivity {
         edit5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent edit5 = new Intent(ItemCurrentList_Freezer.this, EditItem_Bottom.class);
+                Intent edit5 = new Intent(ItemCurrentList.this, EditItem.class);
                 startActivity(edit5);
             }
         });
@@ -62,7 +62,7 @@ public class ItemCurrentList_Freezer extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent done = new Intent(ItemCurrentList_Freezer.this, Refridgerator_Freezer.class);
+                Intent done = new Intent(ItemCurrentList.this, Refridgerator_Bottom.class);
                 startActivity(done);
             }
         });
@@ -71,7 +71,7 @@ public class ItemCurrentList_Freezer extends AppCompatActivity {
         remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent remove = new Intent(ItemCurrentList_Freezer.this, Refridgerator_Freezer.class);
+                Intent remove = new Intent(ItemCurrentList.this, Refridgerator_Bottom.class);
                 startActivity(remove);
             }
         });

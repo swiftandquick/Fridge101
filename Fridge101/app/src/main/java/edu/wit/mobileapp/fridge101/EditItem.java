@@ -8,28 +8,27 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
-public class AddItem_Freezer extends AppCompatActivity {
+public class EditItem extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_item__freezer);
-
-        Button go_back = (Button) findViewById(R.id.b_return);
-        go_back.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_edit_item);
+        Button remove = (Button) findViewById(R.id.b_remove);
+        remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent go_back = new Intent(AddItem_Freezer.this, Refridgerator_Bottom.class);
-                startActivity(go_back);
+                Intent remove = new Intent(EditItem.this, Refridgerator_Bottom.class);
+                startActivity(remove);
             }
         });
 
-        Button add_item = (Button) findViewById(R.id.b_add);
-        add_item.setOnClickListener(new View.OnClickListener() {
+        Button done = (Button) findViewById(R.id.b_done);
+        done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent add_item = new Intent(AddItem_Freezer.this, Refridgerator_Bottom.class);
-                startActivity(add_item);
+                Intent done = new Intent(EditItem.this, Refridgerator_Bottom.class);
+                startActivity(done);
             }
         });
 
@@ -41,6 +40,14 @@ public class AddItem_Freezer extends AppCompatActivity {
                 android.R.layout.simple_spinner_item, arraySpinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         s.setAdapter(adapter);
+
+        String[] arraySpinner2 = new String[] {
+                "Undecided", "Freezer", "Bottom" };
+        Spinner s2 = (Spinner) findViewById(R.id.s_where);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, arraySpinner2);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        s2.setAdapter(adapter2);
 
     }
 }

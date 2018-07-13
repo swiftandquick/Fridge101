@@ -12,18 +12,18 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddItem_Bottom extends AppCompatActivity {
+public class AddItem extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_item__bottom);
+        setContentView(R.layout.activity_add_item);
 
         Button go_back = (Button) findViewById(R.id.b_return);
         go_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent go_back = new Intent(AddItem_Bottom.this, Refridgerator_Bottom.class);
+                Intent go_back = new Intent(AddItem.this, Refridgerator_Bottom.class);
                 startActivity(go_back);
             }
         });
@@ -32,7 +32,7 @@ public class AddItem_Bottom extends AppCompatActivity {
         add_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent add_item = new Intent(AddItem_Bottom.this, Refridgerator_Bottom.class);
+                Intent add_item = new Intent(AddItem.this, Refridgerator_Bottom.class);
                 startActivity(add_item);
             }
         });
@@ -45,6 +45,14 @@ public class AddItem_Bottom extends AppCompatActivity {
                 android.R.layout.simple_spinner_item, arraySpinner);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         s.setAdapter(adapter);
+
+        String[] arraySpinner2 = new String[] {
+                "Undecided", "Freezer", "Bottom" };
+        Spinner s2 = (Spinner) findViewById(R.id.s_where);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, arraySpinner2);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        s2.setAdapter(adapter2);
 
     }
 

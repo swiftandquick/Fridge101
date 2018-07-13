@@ -19,7 +19,7 @@ public class Tab1Home_Freezer extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ItemCurrentList_Bottom.class);
+                Intent intent = new Intent(getActivity(), ItemCurrentList.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class Tab1Home_Freezer extends Fragment {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), AddItem_Freezer.class);
+                Intent intent = new Intent(getActivity(), AddItem.class);
                 startActivity(intent);
             }
         });

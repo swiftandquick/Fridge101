@@ -192,6 +192,27 @@
     </GridLayout>
 
     <GridLayout
+        android:id="@+id/gl_6th_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_below="@id/gl_5th_row" >
+
+        <TextView
+            android:id="@+id/tv_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where do you want to put it?  "
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/s_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
+    <GridLayout
         android:id="@+id/gl_last_row"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

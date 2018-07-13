@@ -4,14 +4,14 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".ItemCurrentList_Bottom">
+tools:context=".ItemCurrentList">
 
     <TextView
         android:id="@+id/txt_Message1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:text="Current List (Bottom)"
+        android:text="Current List"
         android:textSize="30dp"
         android:layout_centerHorizontal="true" />
 
@@ -26,14 +26,21 @@ tools:context=".ItemCurrentList_Bottom">
             android:id="@+id/gl_item_list"
             android:layout_height="fill_parent"
             android:layout_width="fill_parent"
-            android:columnCount="2" >
+            android:columnCount="3" >
 
             <TextView
                 android:id="@+id/tv_item_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Current List"
+                android:text="Item\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
                 android:layout_gravity="left" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_gravity="center" />
 
             <TextView
                 android:id="@+id/tv_expiration_date"
@@ -60,6 +67,12 @@ tools:context=".ItemCurrentList_Bottom">
                     android:inputType="text"/>
 
             </GridLayout>
+
+            <EditText
+                android:id="@+id/et_category1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
 
             <GridLayout
                 android:id="@+id/gl_expirationdate1"
@@ -129,6 +142,12 @@ tools:context=".ItemCurrentList_Bottom">
 
             </GridLayout>
 
+            <EditText
+                android:id="@+id/et_category2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
             <GridLayout
                 android:id="@+id/gl_expirationdate2"
                 android:layout_width="wrap_content"
@@ -196,6 +215,12 @@ tools:context=".ItemCurrentList_Bottom">
                     android:inputType="text"/>
 
             </GridLayout>
+
+            <EditText
+                android:id="@+id/et_category3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
 
             <GridLayout
                 android:id="@+id/gl_expirationdate3"
@@ -265,6 +290,12 @@ tools:context=".ItemCurrentList_Bottom">
 
             </GridLayout>
 
+            <EditText
+                android:id="@+id/et_category4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
             <GridLayout
                 android:id="@+id/gl_expirationdate4"
                 android:layout_width="wrap_content"
@@ -331,6 +362,12 @@ tools:context=".ItemCurrentList_Bottom">
                     android:inputType="text"/>
 
             </GridLayout>
+
+            <EditText
+                android:id="@+id/et_category5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
 
             <GridLayout
                 android:id="@+id/gl_expirationdate5"

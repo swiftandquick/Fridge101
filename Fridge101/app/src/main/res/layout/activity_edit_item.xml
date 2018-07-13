@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditItem_Freezer">
+    tools:context=".EditItem">
 
     <ImageButton
         android:id="@+id/ib_placeholder"
@@ -186,6 +186,27 @@
 
         <Spinner
             android:id="@+id/s_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_6th_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_below="@id/gl_5th_row" >
+
+        <TextView
+            android:id="@+id/tv_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where do you want to put it?  "
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/s_where"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
