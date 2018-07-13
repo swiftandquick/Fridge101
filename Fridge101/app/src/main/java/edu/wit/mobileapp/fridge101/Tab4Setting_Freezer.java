@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class Tab4Setting_Freezer extends Fragment {
 
-    // Maybe leave this here for now.
+    // Maybe leave this here for now.  Don't delete it yet.  
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
