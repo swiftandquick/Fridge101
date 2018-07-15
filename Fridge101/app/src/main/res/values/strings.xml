@@ -8,6 +8,7 @@
     <string name="title_activity_refridgerator__freezer">Refridgerator_Freezer</string>
     <string name="title_activity_refridgerator__bottom">Refridgerator_Bottom</string>
     <string name="title_activity_tab2_summary__bottom">Tab2Summary_Bottom</string>
+    <string name="title_activity_tab2_summary__freezer">Tab2Summary_Freezer</string>
 
     <string-array name="fridge_category">
         <item>All Items</item>

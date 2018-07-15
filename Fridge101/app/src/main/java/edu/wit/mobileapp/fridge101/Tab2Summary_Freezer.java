@@ -1,31 +1,32 @@
 package edu.wit.mobileapp.fridge101;
 
-import android.support.design.widget.TabLayout;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.widget.Button;
 
 public class Tab2Summary_Freezer extends Fragment {
 
+    Button CheckOutSummary;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.tab2summary_freezer, container, false);
+        View rootView = inflater.inflate(R.layout.tab2summary_bottom, container, false);
 
-        // Check values -> string file for category.
-        String [] values =
-                {"All Items", "Vegetable", "Fruit", "Grain", "Meat",
-                        "Drink", "Other Food", "Non-Food"};
-        Spinner spinner = (Spinner) rootView.findViewById(R.id.s_category);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, values);
-        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        spinner.setAdapter(adapter);
+        Button COS = (Button) rootView.findViewById(R.id.b_COS);
+        COS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Tab2Summary_Freezer_2.class);
+                startActivity(intent);
+            }
+        });
 
+        // Place return at the end.
         return rootView;
     }
 

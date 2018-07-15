@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:id="@+id/AllItemsLayout_F">
+
+    <GridLayout
+        android:id="@+id/gl_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:textColor="#080808" />
+
+        <TextView
+            android:id="@+id/tv_expiration_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiration Date"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:textColor="#080808" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/gl_sample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gl_top"
+        android:columnCount="2" >
+
+        <TextView
+            android:id="@+id/tv_item_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Items (Freezer)"
+            android:layout_gravity="start"
+            android:textStyle="bold"
+            android:textColor="#080808" />
+
+        <TextView
+            android:id="@+id/tv_expiration_date_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YYYY-MM-DD"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:textColor="#080808" />
+
+    </GridLayout>
+
+</RelativeLayout>

@@ -28,11 +28,16 @@
             android:label="@string/title_activity_refridgerator__bottom"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ItemCurrentList" />
-        <activity android:name=".AddItem_Bottom" />
+        <activity android:name=".AddItem" />
         <activity android:name=".EditItem" />
-        <activity android:name=".Tab2Summary_Bottom_Fragment" />
-        <activity android:name=".Tab4Setting_Bottom" />
-        <activity android:name=".Tab4Setting_Freezer"></activity>
+        <activity
+            android:name=".Tab2Summary_Bottom_2"
+            android:label="@string/title_activity_refridgerator__bottom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tab2Summary_Freezer_2"
+            android:label="@string/title_activity_refridgerator__freezer"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
